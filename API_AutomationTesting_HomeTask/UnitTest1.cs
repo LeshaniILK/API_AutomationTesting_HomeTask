@@ -17,7 +17,7 @@ namespace API_AutomationTesting_HomeTask
         {
             restClient = new RestClient("https://jsonplaceholder.typicode.com/");
             restRequest = new RestRequest("users", Method.Get);
-            //Assert.That("" + restRequest.Method + "", Is.EqualTo("Get"));
+            Assert.That("" + restRequest.Method + "", Is.EqualTo("Get"));
             restResponse = restClient.Execute(restRequest);
         }
 
